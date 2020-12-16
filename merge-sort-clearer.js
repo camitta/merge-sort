@@ -73,8 +73,8 @@ function mergeSort(array) {
 
 // get console arguments if they exist otherwise detault to 100
 const numberOfElements = Number(process.argv[2]) || 100;
-const constructRandomNumberArray = require("./constructRandomNumberArray");
-const unsortedArray = constructRandomNumberArray(numberOfElements);
+const createRandomNumberArray = require("./create-random-number-array");
+const unsortedArray = createRandomNumberArray(numberOfElements);
 const sortedArray = mergeSort(unsortedArray);
 
 console.log(unsortedArray, sortedArray);

@@ -94,8 +94,8 @@ function mergeSort(array, comparator) {
 
 // get console arguments if they exist otherwise detault to 100
 const numberOfElements = Number(process.argv[2]) || 100;
-const constructRandomNumberArray = require("./constructRandomNumberArray");
-const unsortedArray = constructRandomNumberArray(numberOfElements);
+const createRandomNumberArray = require("./create-random-number-array");
+const unsortedArray = createRandomNumberArray(numberOfElements);
 const sortedArray = mergeSort(
   unsortedArray,
   (valueA, valueB) => valueA < valueB // our comparator function is sorting in ascending order
